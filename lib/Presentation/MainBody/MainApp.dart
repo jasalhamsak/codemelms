@@ -1,10 +1,10 @@
-import 'package:codemeapp/ChatPage.dart';
-import 'package:codemeapp/CodemeMain.dart';
-import 'package:codemeapp/Discover.dart';
-import 'package:codemeapp/NavigationBar.dart';
-import 'package:codemeapp/ProfilePage.dart';
-import 'package:codemeapp/Resources.dart';
-import 'package:codemeapp/component7.dart';
+import 'package:codemeapp/Presentation/Discover/Discover.dart';
+import 'package:codemeapp/Presentation/Home/CodemeMain.dart';
+import 'package:codemeapp/Presentation/LandingPage/Components/Components.dart';
+import 'package:codemeapp/Presentation/MainBody/Components/Components.dart';
+import 'package:codemeapp/Presentation/Profile/ProfilePage.dart';
+import 'package:codemeapp/Presentation/Resources/Resources.dart';
+import 'package:codemeapp/Presentation/chats/ChatPage.dart';
 import 'package:flutter/material.dart';
 
 class Mainapp extends StatefulWidget {

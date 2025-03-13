@@ -1,6 +1,5 @@
+import 'package:codemeapp/Presentation/Discover/Components/Components.dart';
 import 'package:flutter/material.dart';
-import 'NavigationBar.dart';
-import 'component7.dart';
 
 class Discover extends StatelessWidget {
   const Discover({super.key});

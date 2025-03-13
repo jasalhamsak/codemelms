@@ -1,33 +1,6 @@
-import 'package:codemeapp/ChatPage.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:codemeapp/Presentation/chats/ChatPage.dart';
 import 'package:flutter/material.dart';
 
-class Infield extends StatelessWidget {
-  const Infield({super.key, required this.hintText});
-
-  final String hintText;
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      margin: EdgeInsets.only(bottom: 30),
-      width: 300,
-      height: 45,
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(15),
-        color: Colors.white,
-      ),
-      child: TextField(
-        decoration: InputDecoration(
-          hintText: hintText, // Placeholder text
-          hintStyle: TextStyle(color: Colors.grey),
-          contentPadding: EdgeInsets.symmetric(horizontal: 10),
-          border: InputBorder.none, // Removes default border
-        ),
-      ),
-    );
-  }
-}
 
 class ChatsContainer extends StatelessWidget {
   ChatsContainer({super.key});
@@ -81,6 +54,54 @@ class ChatsContainer extends StatelessWidget {
             ),
           );
         },
+      ),
+    );
+  }
+}
+
+
+
+class send extends StatelessWidget {
+  const send({super.key, required this.sent});
+
+  final String sent;
+
+  @override
+  Widget build(BuildContext context) {
+    return  Align(
+      alignment: Alignment.topRight,
+      child: Container(
+        margin: EdgeInsets.all(10),
+        width: 250,
+        height: 80,
+        decoration: BoxDecoration(
+            color: Color(0xff211F53),
+            borderRadius: BorderRadius.only(topLeft: Radius.circular(30),topRight: Radius.circular(30),bottomLeft: Radius.circular(30))
+        ),
+        child: Center(child: Text(sent,style: TextStyle(fontWeight: FontWeight.w500,fontSize: 9,color: Colors.white),)),
+      ),
+    );
+  }
+}
+
+class recive extends StatelessWidget {
+  const recive({super.key, required this.recived});
+
+  final String recived;
+
+  @override
+  Widget build(BuildContext context) {
+    return  Align(
+      alignment: Alignment.topLeft,
+      child: Container(
+        margin: EdgeInsets.all(10),
+        width: 250,
+        height: 80,
+        decoration: BoxDecoration(
+            color: Color(0xffCECCFF),
+            borderRadius: BorderRadius.only(topLeft: Radius.circular(30),topRight: Radius.circular(30),bottomRight: Radius.circular(30))
+        ),
+        child: Center(child: Text(recived,style: TextStyle(fontWeight: FontWeight.w500,fontSize: 9,color: Colors.black),)),
       ),
     );
   }

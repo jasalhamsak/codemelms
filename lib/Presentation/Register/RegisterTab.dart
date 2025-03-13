@@ -1,6 +1,7 @@
+import 'package:codemeapp/Presentation/login/Components/Components.dart';
 import 'package:flutter/material.dart';
-import 'LoginTab.dart';
-import 'inField.dart';
+import '../login/LoginTab.dart';
+
 
 class code2 extends StatelessWidget {
   const code2({super.key});

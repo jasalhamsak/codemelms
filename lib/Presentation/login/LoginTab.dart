@@ -1,9 +1,7 @@
-import 'package:codemeapp/MainApp.dart';
+import 'package:codemeapp/Presentation/MainBody/MainApp.dart';
+import 'package:codemeapp/Presentation/Register/RegisterTab.dart';
+import 'package:codemeapp/Presentation/login/Components/Components.dart';
 import 'package:flutter/material.dart';
-import 'CodemeMain.dart';
-import 'package:codemeapp/NavigationBar.dart';
-import 'package:codemeapp/RegisterTab.dart';
-import 'inField.dart';
 
 class Logintab extends StatelessWidget {
   const Logintab({super.key});

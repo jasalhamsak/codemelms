@@ -1,6 +1,7 @@
+import 'package:codemeapp/Presentation/Register/RegisterTab.dart';
+import 'package:codemeapp/Presentation/login/LoginTab.dart';
 import 'package:flutter/material.dart';
-import 'package:codemeapp/LoginTab.dart';
-import 'package:codemeapp/RegisterTab.dart';
+
 
 class codeme extends StatelessWidget {
   const codeme({super.key});

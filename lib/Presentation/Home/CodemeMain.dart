@@ -1,6 +1,6 @@
+import 'package:codemeapp/Presentation/Home/Components/Components.dart';
+import 'package:codemeapp/data/Componets/Packages.dart';
 import 'package:flutter/material.dart';
-import 'package:codemeapp/NavigationBar.dart';
-import 'package:codemeapp/component7.dart';
 
 class Codememain extends StatelessWidget {
   // Create a GlobalKey for the Scaffold
@@ -25,7 +25,11 @@ class Codememain extends StatelessWidget {
                 Text(" Ameliya", style: TextStyle(fontSize: 24, fontWeight: FontWeight.w600)),
                 Padding(
                   padding: const EdgeInsets.only(top: 10.0, bottom: 10),
-                  child: Component7(imege: "assets/lms 1.png"),
+                  child: animationSlider(imeges: [
+                    "assets/Frame 8255.png",
+                    "assets/lms3.png"
+                    ]
+                    ,)
                 ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),

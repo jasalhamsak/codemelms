@@ -1,7 +1,7 @@
-import 'package:codemeapp/MainApp.dart';
+
+import 'package:codemeapp/Presentation/LandingPage/1codmeapp.dart';
 import 'package:flutter/material.dart';
 
-import 'codmeapp.dart';
 
 
 void main(){
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
         // home: instagram(),
-        home: Mainapp(),
+        home: codeme(),
         // home: Images(),
     );
   }

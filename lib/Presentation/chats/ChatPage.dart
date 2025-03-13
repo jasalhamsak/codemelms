@@ -1,5 +1,4 @@
-import 'package:codemeapp/component7.dart';
-import 'package:codemeapp/inField.dart';
+import 'package:codemeapp/Presentation/chats/Components/Components.dart';
 import 'package:flutter/material.dart';
 
 class chat extends StatelessWidget {

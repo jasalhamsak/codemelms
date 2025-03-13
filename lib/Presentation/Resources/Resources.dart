@@ -1,3 +1,4 @@
+import 'package:codemeapp/Presentation/Discover/Components/Components.dart';
 import 'package:codemeapp/component7.dart';
 import 'package:flutter/material.dart';
 
@@ -18,7 +19,7 @@ class Resources extends StatelessWidget {
           ),
           Text("Continue Learning"),
           Container(
-            width: 339,
+            width: 340,
             height: 150,
             decoration: BoxDecoration(
               color: Colors.white,
@@ -32,10 +33,10 @@ class Resources extends StatelessWidget {
                   height: 120,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(15),
-                    image: DecorationImage(image: AssetImage("assets/lms3.png"))
+                    image: DecorationImage(image: AssetImage("assets/res1.png"))
                   ),
                 ),
-                Image(image: AssetImage("assets/lms3.png")),
+                Image(image: AssetImage("assets/res2.png")),
               ],
             ),
           ),
