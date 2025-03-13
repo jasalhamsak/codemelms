@@ -1,3 +1,4 @@
+import 'package:codemeapp/ChatPage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -40,6 +41,7 @@ class ChatsContainer extends StatelessWidget {
     {"name":"james","imeg":"assets/chat1.png"},
   ];
 
+
   @override
   Widget build(BuildContext context) {
     return Expanded(
@@ -47,29 +49,35 @@ class ChatsContainer extends StatelessWidget {
         itemCount: data.length,
         itemBuilder:(context, index) {
           final details=data[index];
-          return Container(
-            margin: EdgeInsets.all(3),
-            width: 300,
-            height: 90,
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(15),
-                color: Colors.white
-            ),
-            child: Row(
-              children: [
-                CircleAvatar(
-                  radius: 30,
-                  backgroundImage: AssetImage(details["imeg"]),
-                ),SizedBox(width: 10,),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(details["name"],style: TextStyle(fontWeight: FontWeight.w900,color: Colors.grey,),),
-                    Text("Developer",style: TextStyle(color: Colors.grey,fontSize: 9)),
-                    Text("Type All New Messages",style: TextStyle(fontSize: 10),),
-                  ],
-                )
-              ],
+          return InkWell(
+            onTap: (){
+
+              Navigator.of(context).push(MaterialPageRoute(builder: (context) => personalChat(),));
+            },
+            child: Container(
+              margin: EdgeInsets.all(3),
+              width: 300,
+              height: 90,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(15),
+                  color: Colors.white
+              ),
+              child: Row(
+                children: [
+                  CircleAvatar(
+                    radius: 30,
+                    backgroundImage: AssetImage(details["imeg"]),
+                  ),SizedBox(width: 10,),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(details["name"],style: TextStyle(fontWeight: FontWeight.w900,color: Colors.grey,),),
+                      Text("Developer",style: TextStyle(color: Colors.grey,fontSize: 9)),
+                      Text("Type All New Messages",style: TextStyle(fontSize: 10),),
+                    ],
+                  )
+                ],
+              ),
             ),
           );
         },

@@ -1,8 +1,10 @@
+import 'package:codemeapp/component7.dart';
 import 'package:codemeapp/inField.dart';
 import 'package:flutter/material.dart';
 
 class chat extends StatelessWidget {
   chat({super.key});
+
 
 
 
@@ -63,3 +65,42 @@ class chat extends StatelessWidget {
     );
   }
 }
+
+
+class personalChat extends StatelessWidget {
+  const personalChat({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        actions: const [
+          CircleAvatar(
+            radius: 20,
+            backgroundImage: AssetImage("assets/Ellipse 2.png"),
+          ),
+        ],
+      ),
+      body: SingleChildScrollView(
+        child: SafeArea(
+          child: Column(
+            children: [
+              SizedBox(height: 50,),
+              send(sent: "Lorem Ipsum is simply dummy text of the printing \nand typesetting industry"),
+              recive(recived: "Lorem Ipsum is simply dummy text of the printing \nand typesetting industry."),
+              send(sent: "Lorem Ipsum is simply dummy text of the printing \nand typesetting industry"),
+              recive(recived: "Lorem Ipsum is simply dummy text of the printing \nand typesetting industry."),
+              send(sent: "Lorem Ipsum is simply dummy text of the printing \nand typesetting industry"),
+              recive(recived: "Lorem Ipsum is simply dummy text of the printing \nand typesetting industry."),
+              send(sent: "Lorem Ipsum is simply dummy text of the printing \nand typesetting industry"),
+              recive(recived: "Lorem Ipsum is simply dummy text of the printing \nand typesetting industry."),
+        
+        
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
